@@ -439,6 +439,10 @@ if __name__ == '__main__':
         from easydict import EasyDict
         dataset_cfg = EasyDict(yaml.safe_load(open(sys.argv[2])))
         ROOT_DIR = (Path(__file__).resolve().parent / '../../../').resolve()
+        print("DEBUG:")
+        print(ROOT_DIR)
+        print(dataset_cfg)
+        print(ROOT_DIR / 'data' / 'kitti')
         create_kitti_infos(
             dataset_cfg=dataset_cfg,
             class_names=['Car', 'Pedestrian', 'Cyclist'],
