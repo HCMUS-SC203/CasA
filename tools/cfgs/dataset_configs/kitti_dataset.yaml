@@ -1,6 +1,6 @@
 DATASET: 'KittiDataset'
-DATA_PATH: '../data/kitti'
-# DATA_PATH: '/kaggle/input/kitti-tracking-dataset-for-casa/kitti_tracking_casa'
+# DATA_PATH: '../data/kitti'
+DATA_PATH: '/kaggle/input/kitti-casa'
 
 POINT_CLOUD_RANGE: [0, -40, -3, 70.4, 40, 1]
 
